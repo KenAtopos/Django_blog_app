@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+{% endblock css_files %}
+
+
+{% block title %}
+    Post title
+{% endblock title %}
+
+
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static "blog/images/mountains.jpg" %}" alt="post title">
+            <address>By Ken Atopos</address>
+            <div>
+                Last updated on <time>21st March</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus quidem debitis quam nostrum incidunt optio est dolore, iure culpa dolor quos error ea cupiditate enim sed deserunt praesentium. Consequatur!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus quidem debitis quam nostrum incidunt optio est dolore, iure culpa dolor quos error ea cupiditate enim sed deserunt praesentium. Consequatur!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus quidem debitis quam nostrum incidunt optio est dolore, iure culpa dolor quos error ea cupiditate enim sed deserunt praesentium. Consequatur!</p>
+    </main>
+{% endblock content %}
