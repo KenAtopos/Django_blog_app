@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post.css" %}">
     <link rel="stylesheet" href="{% static "blog/index.css" %}">
 {% endblock css_files %}
 
@@ -12,12 +13,6 @@
 
 
 {% block content %}
-    <header id="main-navigation">
-        <h1><a href="">Ken's Blog</a></h1>
-        <nav>
-            <a href="">All posts</a>
-        </nav>
-    </header>
 
     <section id="welcome">
         <header>
@@ -30,17 +25,7 @@
     <section id="latest-posts">
         <h2>My latest thoughts</h2>
         <ul>
-            <li>
-                <article class="post">
-                    <a href="">
-                        <img src="{% static "blog/images/mountains.jpg" %}" alt="mountain hiking" />
-                        <div class="post__content">
-                            <h3>Mountain Hiking</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eligendi numquam ipsum dolorem, hic illo nihil quisquam quibusdam non, deleniti fuga, eveniet atque ab? Adipisci sunt rem accusantium placeat modi?</p>
-                        </div>
-                    </a>
-                </article>
-            </li>
+            {% include "blog/includes/post.html" %}
         </ul>
     </section>
     <section id="about">
