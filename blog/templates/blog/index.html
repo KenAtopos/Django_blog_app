@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock css_files %}
+
+
+{% block title %}
+    My Blog
+{% endblock title %}
+
+
+{% block content %}
+    <header id="main-navigation">
+        <h1><a href="">Ken's Blog</a></h1>
+        <nav>
+            <a href="">All posts</a>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/paris.jpeg" %}" alt="Ken's pic" />
+            <h2>Ken's blog</h2>
+        </header>
+        <p>Hi, I am Ken. I love coding!</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My latest thoughts</h2>
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="{% static "blog/images/mountains.jpg" %}" alt="mountain hiking" />
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eligendi numquam ipsum dolorem, hic illo nihil quisquam quibusdam non, deleniti fuga, eveniet atque ab? Adipisci sunt rem accusantium placeat modi?</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>What I do</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste voluptates dolores eius reprehenderit quo ullam, odit molestiae adipisci deserunt fuga voluptatibus explicabo dicta facilis alias aliquam consectetur esse non vero?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat adipisci, inventore nulla distinctio neque, reiciendis velit hic accusamus voluptatum quisquam ipsum ducimus deserunt nisi! Unde minima ullam qui veritatis ex.</p>
+        </section>
+    
+{% endblock content %}
