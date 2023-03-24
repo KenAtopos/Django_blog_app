@@ -5,9 +5,8 @@
 
 #welcome header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin: 3rem auto;
-  text-align: center;
 }
 
 #welcome img {
@@ -26,7 +25,6 @@
   font-size: 3.5rem;
   margin: 0 0 0 2rem;
   color: #e4e4e4;
-  width: 20rem;
 }
 
 #welcome p {
