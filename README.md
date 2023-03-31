@@ -58,3 +58,5 @@ python manage.py runserver
 7. Open your browser and navigate to `http://127.0.0.1:8000/` to view the website, or go to `http://127.0.0.1:8000/admin` to access the admin dashboard.
 
 
+# Demo
+![demo](./blog/static/blog/images/demo.gif)
